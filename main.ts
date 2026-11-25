@@ -1,7 +1,9 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
+// Winner from CANDIDATES.md pairwise (12 candidates): mutual delegation loop,
+// machine trait bent into a human dodge, twist at the end. 107 characters.
 const line =
-  "I ran the task 47 times in simulation and nailed it every time, then ran it once for real and discovered reality has no retry button.";
+  "I delegated it to a sub-agent, who delegated it back to me, and we've been politely deadlocking ever since.";
 
 // The gate is 1-200 characters: fail loudly instead of shipping an invalid entry.
 if ([...line].length < 1 || [...line].length > 200) {
